@@ -1,0 +1,1252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #272F30;
+}
+.cercle{
+    border-radius: 50%;
+    background: linear-gradient(180deg, #272F30 0%, #D32626 100%);
+}
+.ligne{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 10px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.none{
+    margin-bottom: 0 !important;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: #D32626;
+    border-bottom: 1px solid #FFFFFF;
+}
+header > a{
+    margin-top: 23px;
+}
+header nav{
+    height: 50px;
+    display: flex;
+}
+header nav div.desktop-nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+header nav div.desktop-nav ul li{
+    height: 100%;
+    width: 182px;
+    text-align: center !important;
+    position: relative;
+}
+header nav div.desktop-nav ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header nav div.desktop-nav ul li a:hover::after{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background-color: #FFFFFF;
+    content: '';
+}
+header a img{
+    height: 64px;
+}
+header nav div.desktop-nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+header nav div.desktop-nav ul li ul.sous{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+header nav div.desktop-nav > ul li:hover .sous{
+    display: block;
+}
+header nav div.desktop-nav ul li ul.sous li{
+    width: 100%;
+    text-align: left;
+}
+header nav div.desktop-nav ul li ul.sous li a{
+    padding: 10px;
+    background-color: #D32626;
+}
+
+header nav div.mobile-nav,
+#burger,
+.mobile_link-group {
+    display: none;
+}
+
+#burger {
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.mobile_link-group {
+    position: absolute;
+    z-index: 4;
+    width: 100vw;
+    right: 0;
+    top: 60px;
+    background: #D32626;
+}
+.mobile_link-group li {
+    text-align: right;
+    padding: 25px 20px;
+    border-bottom: solid 1px lightgrey;
+    cursor: pointer;
+}
+.mobile_link-group li:hover{
+    background-color: #4b4b4d;
+}
+.mobile_link-group a{
+    text-decoration: none;
+}
+.mobile_link-group li p{
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* FIN HEADER */
+
+/* FOOTER */
+
+footer{
+    border-top: 1px #D32626 solid;
+    margin: 0 50px;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer div#social{
+    display: flex;
+    flex-direction: column;
+}
+footer a img{
+    width: 250px;
+}
+footer div div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+footer div div svg{
+    height: 24px;
+    width: 24px;
+    fill: #D32626;
+}
+footer div div a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+footer div div a:hover{
+    color: #D32626;
+}
+footer div#social a svg{
+    height: 30px;
+    fill: #D32626;
+}
+footer div#social a:nth-child(4) svg{
+    width: 60px;
+}
+footer div#social a{
+    height: 30px;
+    margin-bottom: 20px;
+}
+footer div a.without{
+    margin-left: 44px;
+}
+footer div{
+    text-align: center;
+}
+
+/* FIN FOOTER */
+
+/* ARTICLES */
+
+section#img{
+    min-height: 70vh;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+section#img div#carousel-head{
+    display: flex;
+}
+section#img div#carousel-head img{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+section#img div.text-head{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+section#img div div.ligne{
+    height: inherit;
+}
+section#img div div.text h1{
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-weight: bold;
+} 
+section#img div div.text h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+section h2.title{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #D32626;
+    font-weight: bold;
+    font-size: 2rem;
+}
+section h2 div.cercle{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    transform: rotate(-90deg);
+}
+section#catalogue div{
+    display: flex;
+    justify-content: center;
+}
+section#catalogue div img{
+    width: 35%;
+}
+section#catalogue div div.com{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    width: 40%;
+    margin-left: 50px;
+    padding-top: 55px;
+    position: relative;
+}
+section#catalogue div div.com p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4b4b4d;
+    margin-bottom: 25px;
+}
+section#catalogue div div.com div.cercle{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: -1;
+    top: 35px;
+    right: 0px;
+    transform: rotate(90deg);
+    opacity: 60%;
+}
+section#catalogue div div.com div#stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 25px;
+}
+section#catalogue div div.com div#stats div{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+section#catalogue div div.com div#stats div h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #D32626;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+section#catalogue div div.com div#stats div h4{
+    text-transform: uppercase;
+    color: #4b4b4d;
+}
+section#catalogue div div.com a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #D32626;
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+}
+section#catalogue div div.com a:hover{
+    background-color: #FFFFFF;
+    border: 2px #D32626 solid;
+    color: #D32626;
+}
+
+/* SLIDER */
+
+section#promo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+}
+section#promo p.promo-null{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+section#promo .slick-slide img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+section#promo .slick-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+section#promo .slick-prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+section#promo h4 {
+    margin-bottom: 5px;
+    padding-left: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #D32626;
+}
+section#promo .center {
+    padding-top: 40px;
+    margin-top: auto;
+}
+section#promo .center .button {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+section#promo .center .button:hover{
+    border-color: black;
+    color: black;
+}
+section#promo div.card{
+    padding: 0 30px;
+}
+section#promo div.card div.card-text{
+    padding: 22px;
+}
+section#promo div.card div.card-text h2{
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #D32626;
+    text-transform: capitalize;
+}
+section#promo div.card div.card-text p{
+    font-size: 20px;
+}
+section#promo button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+
+    cursor: pointer;
+    
+    font-size: 0;
+}
+section#promo button.slick-next {
+    right: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+section#promo button:hover {
+    background: rgba(0, 0, 0, 0.65);
+}
+section#promo button.slick-next:after {
+    width: 20px;
+    height: 20px;
+    content: url(../icon/arrow-right.svg);
+}
+section#promo button.slick-prev {
+    left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+section#promo button.slick-prev:after {
+    width: 20px;
+    height: 20px;
+    content: url(../icon/arrow-right.svg);
+    transform: rotate(180deg);
+}
+
+/* FIN SLIDER */
+/* FIN ARTICLES */
+
+/* QUI SOMMES NOUS ? */
+
+section#nous{
+    padding-top: 110px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+section#nous img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+section#nous div.banner-us{
+    position: absolute;
+}
+section#nous div.banner-us p{
+    color: #272F30;
+    width: 40%;
+    font-size: 1.4rem;
+    margin-left: 120px;
+}
+section#actu{
+    margin-bottom: 50px;
+}
+section#actu div.container, section#serv div.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section#actu div div.cardActu, section#serv div div.cardActu{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+section#actu div div.cardActu h6{
+    font-size: 1.4rem;
+    color: #D32626;
+    font-weight: bold;
+    padding-left: 10px;
+}
+section#actu div div.cardActu img, section#serv div div.cardActu img{
+    width: 100%;
+    height: 422px;
+    box-shadow: 12px 4px 15px rgb(108 108 108 / 25%);
+    border-radius: 4px;
+    object-fit: cover;
+}
+section#actu div div.cardActu div.titleActu, section#serv div div.cardActu div.titleActu{
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+}
+section#actu div div.cardActu div.bandeauActu, section#serv div div.cardActu div.bandeauActu{
+    width: 100%;
+    position: absolute;
+    background-color: rgba(211, 38, 38, 0.5);
+    height: 90px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+section#actu div div.cardActu div.bandeauActu div div.ligne, section#serv div div.cardActu div.bandeauActu div div.ligne{
+    height: 40px;
+}
+section#actu div div.cardActu div.bandeauActu div, section#serv div div.cardActu div.bandeauActu div{
+    display: flex;
+    align-items: center;
+}
+section#actu div div.cardActu div.bandeauActu div h4, section#serv div div.cardActu div.bandeauActu div h4{
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+section#actu div div.cardActu p{
+    padding: 10px;
+}
+section#chantier{
+    margin-bottom: 50px;
+}
+section#chantier div.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+section#chantier div.container div.img{
+    border: 1px solid #FFFFFF;
+    width: 33.3%;
+    height: 400px;
+    display: flex;
+    position: relative;
+}
+section#chantier div.container div.img img{
+    width: 100%;
+    object-fit: cover;
+}
+section#chantier div.container div.bandeau{
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    background-color: rgba(211, 38, 38, 0.5);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+section#chantier div.container div.bandeau div.text div{
+    display: flex;
+    align-items: center;
+}
+section#chantier div.container div.textOpen div.text div{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+section#chantier div.container div.bandeau h4{
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+section#chantier div.container div.bandeau div.text div div.ligne{
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+section#chantier div.container div.bandeau div.text p{
+    visibility: hidden;
+    display: none;
+}
+section#chantier div.container div.textOpen div.text p{
+    visibility: visible;
+    display: block;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+section#partenaires{
+    margin-bottom: 50px;
+}
+section#partenaires h2.title{
+    margin-bottom: 0;
+}
+section#partenaires div#carrou{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+section#partenaires div#carrou div figure{
+    height: 200px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+section#partenaires div#carrou div a:hover{
+    color: #D32626;
+    fill: #D32626;
+}
+section#partenaires div#carrou div a svg{
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+}
+section#partenaires div#carrou div div.part{
+    width: 700px;
+    cursor: grab;
+    margin-bottom: 10px;
+}
+section#partenaires div#carrou div div.part:active{
+    cursor: grabbing;
+}
+
+/* FIN QUI SOMMES NOUS ? */
+
+/* CONTACT */
+
+section#map{
+    padding-top: 110px;
+    margin-bottom: 50px;
+}
+section#map div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section#map div div h5{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+section#map div div.text h5 div.cercle{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+section#map div div.text{
+    margin-left: 0;
+    width: 300px;
+}
+section#map div div.text p{
+    text-align: center;
+    color: #D32626;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+section#map div div.text a:hover{
+    color: #D32626;
+}
+section#map div div.text a{
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+}
+section#map div div.text span{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+}
+section#map div img{
+    height: 250px;
+    width: 450px;
+    box-shadow: 8px 4px 15px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+section#map div iframe{
+    height: 250px;
+    width: 450px;
+    box-shadow: 8px 4px 15px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+section#map > div{
+    margin-bottom: 40px;
+}
+section#media{
+    margin-bottom: 50px;
+}
+section#media div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section#media div a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+section#media div a img{
+    width: 110px;
+    margin-bottom: 10px;
+}
+section#media div a h6{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+section#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#contact{
+    margin-bottom: 50px;
+}
+section#contact div{
+    display: flex;
+}
+section#contact form p.form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+section#contact form p{
+    margin-bottom: 30px;
+    margin-left: 23px;
+}
+section#contact form div p.form input{
+    height: 50px;
+    width: 480px;
+    padding-left: 30px;
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.2rem;
+    outline-width: 0px;
+}
+section#contact form p.form textarea{
+    width: 1015px;
+    height: 200px;
+    background: #E0E0E0;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-size: 1.2rem;
+    outline-width: 0px;
+    resize: none;
+}
+section#contact form p button{
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(180deg, #D32626 0%, #342E2F 99.99%, rgba(39, 47, 48, 0.7) 100%);
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+section#contact form p.form label{
+    margin-left: 35px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+section#contact form p span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: default;
+    margin-right: 20px;
+}
+section#contact form p label{
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+section#contact form div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    width: 1060px;
+}
+
+/* FIN CONTACT */
+
+/* SERVICES */
+
+section#serv{
+    margin-bottom: 50px;
+    padding-top: 110px;
+}
+section#serv div.services{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* FIN SERVICES */
+
+/* BACK */
+
+/* NAV BACK */
+
+div.navBack{
+    min-height: 100vh;
+    padding-top: 110px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-shadow: -5px -10px 5px 5px;
+}
+div.navBack a div.cercle{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+div.navBack a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #272F30;
+}
+div.navBack a:hover{
+    color: #D32626;
+}
+div.navBack aside p{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+/* FIN NAV BACK */
+
+/* ADDBACK */
+
+section.addBack{
+    display: flex;
+}
+section.addBack h1{
+    padding-top: 110px;
+}
+section.addBack h1.title{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #D32626;
+    font-weight: bold;
+    font-size: 2rem;
+}
+section.addBack h1.title div.cercle{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    transform: rotate(-90deg);
+}
+section.addBack div.formAdd{
+    width: 100%;
+}
+section.addBack div.formAdd form{
+    background-color: #D32626;
+    border-radius: 8px;
+    padding: 50px 100px 20px 100px;
+    margin-bottom: 50px;
+    width: 75%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section.addBack div.formAdd form p.addFile input#more{
+    display: none;
+}
+section.addBack div.formAdd form p{
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+section.addBack div.formAdd form p input{
+    height: 50px;
+    width: 100%;
+    padding-left: 30px;
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 1.2rem;
+    outline-width: 0px;
+}
+section.addBack div.formAdd form p textarea{
+    width: 100%;
+    height: 200px;
+    background: #E0E0E0;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 1.2rem;
+    outline-width: 0px;
+    resize: none;
+}
+section.addBack div.formAdd form p button{
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(180deg, #D32626 0%, #342E2F 99.99%, rgba(39, 47, 48, 0.7) 100%);
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+section.addBack div.formAdd div{
+    display: flex;
+    justify-content: center;
+}
+section.addBack div.formAdd form p label svg{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    fill: #E0E0E0;
+}
+section.addBack div.formAdd form p input.date{
+    text-transform: uppercase;
+}
+
+/* FIN ADDBACK */
+
+/* DEBUT LOGIN */
+
+body#login{
+    height: 100vh;
+    width: 100%;
+    background-color: #D32626;
+}
+body#login section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+body#login section form p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+body#login section form p label{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+body#login section form p input{
+    height: 50px;
+    width: 480px;
+    padding-left: 30px;
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-size: 1.2rem;
+    outline-width: 0px;
+}
+body#login section form p button{
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(180deg, #D32626 0%, #342E2F 99.99%, rgba(39, 47, 48, 0.7) 100%);
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+body#login section div{
+    width: 40%;
+    margin-bottom: 100px;
+}
+body#login section div img{
+    width: 100%;
+}
+
+/* FIN LOGIN */
+
+/* DEBUT HEADING */
+
+section.addBack div div.heading{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 50px 50px 50px;
+}
+section.addBack div div.heading h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #D32626;
+    display: flex;
+    align-items: center;
+}
+section.addBack div div.heading a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #D32626;
+    height: 50px;
+    width: 300px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.addBack div figure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 70px 50px 70px;
+    background-color: #D32626;
+    padding: 20px 10px 20px 30px;
+    border-radius: 8px;
+}
+section.addBack div figure img{
+    width: 15%;
+}
+section.addBack div figure figcaption{
+    font-size: 1.4rem;
+    max-width: 30%;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+section.addBack div figure div.icon{
+    display: flex;
+}
+section.addBack div figure div.icon a{
+    display: flex;
+    align-items: center;
+}
+section.addBack div figure div.icon a svg{
+    fill: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+/* FIN HEADING */
+
+/* DEBUT CONTACTBACK */
+
+section.addBack div#formContact{
+    width: 100%;
+}
+section.addBack div#formContact div#contactBack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.addBack div#formContact div#contactBack figcaption{
+    margin-bottom: 10px;
+    width: 65%;
+    font-size: 1.4rem;
+}
+section.addBack div#formContact div#contactBack figcaption label{
+    font-weight: bold;
+}
+
+/* FIN CONTACTBACK */
+
+/* ERROR */
+
+section.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+section.error h1{
+    font-size: 4.4rem;
+    color: #D32626;
+}
+
+/* FIN ERROR */
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    header nav div.desktop-nav{
+        display: none;
+    }
+    header nav div.mobile-nav, #burger{
+        display: flex;
+    }
+    footer{
+        flex-direction: column;
+        margin: 0;
+        padding: 40px;
+    }
+    footer div div.none{
+        margin-bottom: 20px !important;
+    }
+    section#actu div div.cardActu{
+        margin-bottom: 40px;
+    }
+    section#chantier div.container div.img{
+        width: 100% !important;
+    }
+    section#catalogue div{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#catalogue div div.com{
+        margin-bottom: 50px;
+    }
+    section#catalogue div div.com, section#catalogue div img{
+        width: 70%;
+    }
+    section#partenaires div#carrou{
+        margin-left: 20px;
+    }
+    section#partenaires div#carrou div figure{
+        padding: 20px;
+    }
+    section#nous p{
+        margin: 0 20px !important;
+        width: fit-content !important;
+    }
+    section#map div{
+        flex-direction: column;
+    }
+    section#map div img, section#map div div.text p{
+        margin-bottom: 20px;
+    }
+    section#map div iframe{
+        margin-bottom: 30px;
+    }
+    section#media div{
+        flex-direction: column;
+    }
+    section#media div a, section#contact form p.form{
+        margin-bottom: 25px;
+    }
+    section#contact form, section#contact form p.form, section#contact form div{
+        width: 100%;
+    }
+    section#contact div{
+        flex-direction: column;
+    }
+    section#contact form div p.form{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section#contact form div p.form input, section#contact form p.form textarea, section#contact form div:first-of-type{
+        width: 90%;
+    }
+    section#contact form div p.form input, section#contact form p.form textarea{
+        margin: auto;
+    }
+    section#serv div.services{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#partenaires div#carrou div div.part{
+        width: 400px;
+    }
+    section#partenaires .slick-slide img {
+        width: 200px;
+    }
+    section#nous img{
+        display: none;
+    }
+    section#nous div.banner-us{
+        position: inherit;
+    }
+}
+
+@media (max-width: 929.98px) {
+    section#catalogue div{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#catalogue div div.com{
+        margin-bottom: 50px;
+    }
+    section#catalogue div div.com, section#catalogue div img{
+        width: 70%;
+    }
+    section#chantier div.container div.img{
+        width: initial;
+    }
+    section#chantier div.container div.img{
+        width: 50%;
+    }
+    header nav div.desktop-nav{
+        display: none;
+    }
+    header nav div.mobile-nav, #burger{
+        display: flex;
+    }
+    footer{
+        flex-direction: column;
+        margin: 0;
+        padding: 40px;
+    }
+    footer div div.none{
+        margin-bottom: 20px !important;
+    }
+    section#map div{
+        flex-direction: column;
+    }
+    section#map div img, section#map div div.text p{
+        margin-bottom: 20px;
+    }
+    section#map div iframe{
+        margin-bottom: 30px;
+    }
+    section#contact form, section#contact form p.form, section#contact form div{
+        width: 100%;
+    }
+    section#contact div{
+        flex-direction: column;
+    }
+    section#contact form div p.form{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section#contact form div p.form input, section#contact form p.form textarea, section#contact form div:first-of-type{
+        width: 90%;
+    }
+    section#contact form div p.form input, section#contact form p.form textarea{
+        margin: auto;
+    }
+    section#serv div.services{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#nous img{
+        display: none;
+    }
+    section#nous div.banner-us{
+        position: inherit;
+    }
+}
+
+
+/* FIN RESPONSIVE */
