@@ -72,6 +72,7 @@ header nav div.desktop-nav ul li a{
     font-weight: bold;
     text-decoration: none;
     color: #FFFFFF;
+    cursor: pointer;
 }
 header nav div.desktop-nav ul li a:hover::after{
     position: absolute;
@@ -149,7 +150,7 @@ header nav div.mobile-nav,
 
 /* FOOTER */
 
-footer{
+footer div.footer{
     border-top: 1px #D32626 solid;
     margin: 0 50px;
     padding: 25px 0;
@@ -157,47 +158,55 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-footer div#social{
+footer div.footer div#social{
     display: flex;
     flex-direction: column;
 }
-footer a img{
+footer div.footer a img{
     width: 250px;
 }
-footer div div{
+footer div.footer div div{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-footer div div svg{
+footer div.footer div div svg{
     height: 24px;
     width: 24px;
     fill: #D32626;
 }
-footer div div a{
+footer div.footer div div a{
     text-decoration: none;
     color: black;
     margin-left: 20px;
 }
-footer div div a:hover{
+footer div.footer div div a:hover{
     color: #D32626;
 }
-footer div#social a svg{
+footer div.footer div#social a svg{
     height: 30px;
     fill: #D32626;
 }
-footer div#social a:nth-child(4) svg{
+footer div.footer div#social a:nth-child(4) svg{
     width: 60px;
 }
-footer div#social a{
+footer div.footer div#social a{
     height: 30px;
     margin-bottom: 20px;
 }
-footer div a.without{
+footer div.footer div a.without{
     margin-left: 44px;
 }
-footer div{
+footer div.footer div{
     text-align: center;
+}
+footer div.rights{
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+footer div.rights p a{
+    color: #D32626;
 }
 
 /* FIN FOOTER */
@@ -497,7 +506,7 @@ section#actu div div.cardActu div.titleActu, section#serv div div.cardActu div.t
 section#actu div div.cardActu div.bandeauActu, section#serv div div.cardActu div.bandeauActu{
     width: 100%;
     position: absolute;
-    background-color: rgba(211, 38, 38, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
     height: 90px;
     bottom: 0;
     display: flex;
@@ -1088,6 +1097,80 @@ section.error h1{
 
 /* FIN ERROR */
 
+/* POLITIQUE DE CONFIDENTIALITE */
+
+section.confidential{
+    padding-top: 110px;
+}
+section.confidential div.rgpd-text{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+section.confidential div.rgpd-text p{
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+}
+section.confidential div.rgpd-text p:last-child{
+    margin-bottom: 50px;
+}
+section.confidential div.rgpd-text p a, div.rgpd-text ul li a{
+    color: #D32626;
+}
+section.confidential div.rgpd-text h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d32626;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+section.confidential div.rgpd-text h4{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+section.confidential div.rgpd-text ul{
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+section.confidential div.rgpd-text ul li{
+    font-size: 1.1em;
+}
+
+/* FIN POLITIQUE DE CONFIDENTIALITE */
+
+/* PRODUITS */
+
+section.products{
+    padding-top: 110px;
+}
+section.products div.products-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+section.products h3{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    color: #D32626;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+section.products div.products-container img{
+    width: 35%;
+    object-fit: cover;
+}
+section.products div.products-container ul{
+    list-style: disc;
+    width: 35%;
+}
+section.products div.products-container ul li{
+    font-size: 1.2rem;
+}
+
+/* FIN PRODUITS */
+
 /* RESPONSIVE */
 
 @media (max-width: 600px) {
@@ -1097,12 +1180,12 @@ section.error h1{
     header nav div.mobile-nav, #burger{
         display: flex;
     }
-    footer{
+    footer div.footer{
         flex-direction: column;
         margin: 0;
         padding: 40px;
     }
-    footer div div.none{
+    footer div.footer div div.none{
         margin-bottom: 20px !important;
     }
     section#actu div div.cardActu{
@@ -1178,6 +1261,18 @@ section.error h1{
     section#nous div.banner-us{
         position: inherit;
     }
+    section.products div.products-container{
+        display: flex;
+        flex-direction: column;
+    }
+    section.products div.products-container img{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    section.products div.products-container ul{
+        margin-left: 40px;
+        width: 80%;
+    }
 }
 
 @media (max-width: 929.98px) {
@@ -1203,12 +1298,12 @@ section.error h1{
     header nav div.mobile-nav, #burger{
         display: flex;
     }
-    footer{
+    footer div.footer{
         flex-direction: column;
         margin: 0;
         padding: 40px;
     }
-    footer div div.none{
+    footer div.footer div div.none{
         margin-bottom: 20px !important;
     }
     section#map div{
@@ -1245,6 +1340,18 @@ section.error h1{
     }
     section#nous div.banner-us{
         position: inherit;
+    }
+    section.products div.products-container{
+        display: flex;
+        flex-direction: column;
+    }
+    section.products div.products-container img{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    section.products div.products-container ul{
+        margin-left: 40px;
+        width: 80%;
     }
 }
 

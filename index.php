@@ -30,7 +30,7 @@ $tActu = $actu->fetchAll(PDO::FETCH_ASSOC);
             <div class="text-head">
                 <div class="ligne"></div>
                 <div class="text">
-                    <h1>Vendeur de Matériaux de Constructions</h1>
+                    <h1>Négoce de Matériaux de Construction</h1>
                     <h2>Prévot Matériaux</h2>
                 </div>
             </div>

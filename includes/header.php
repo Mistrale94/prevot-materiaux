@@ -13,6 +13,15 @@
                     </ul> 
                 </li>
                 <li class="deroul">
+                    <a>Nos produits</a>
+                    <ul class="sous">
+                        <li><a href="gros-oeuvre.php">Gros oeuvre</a></li>
+                        <li><a href="second-oeuvre">Second oeuvre</a></li>
+                        <li><a href="amenagement-exterieur.php">Extérieur</a></li>
+                        <li><a href="libre-service.php">Libre service</a></li>
+                    </ul> 
+                </li>
+                <li class="deroul">
                     <a href="us.php">A propos</a>
                     <ul class="sous">
                         <li><a href="us.php#nous">Qui sommes-nous</a></li>
@@ -43,6 +52,10 @@
             </a>
             <ul class="mobile_link-group">
                 <a href="index.php"><li><p>Nos articles</p></li></a>
+                <a href="gros-oeuvre.php"><li><p>Gros oeuvre</p></li></a>
+                <a href="second-oeuvre"><li><p>Second oeuvre</p></li></a>
+                <a href="amenagement-exterieur.php"><li><p>Aménagement extérieur</p></li></a>
+                <a href="libre-service.php"><li><p>Libre service</p></li></a>
                 <a href="us.php"><li><p href="">A propos</p></li></a>
                 <a href="contact.php"><li><p href="">Nous contacter</p></li></a>
                 <a href="services.php"><li><p href="">Nos services</p></li></a>

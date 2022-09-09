@@ -50,6 +50,6 @@ if($error){
         ':mail' => $_POST['mail'],
         ':request' => $_POST['request']
     ]);
-    header('Location: ../../public/contact.php?success');
+    header('Location: ../../contact.php?success');
     exit();
 }

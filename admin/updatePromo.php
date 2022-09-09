@@ -18,8 +18,8 @@ $modif = $read->fetch();
 <html lang="fr">
     <head>
         <?php include('../includes/head.php') ?>
-        <link rel="stylesheet" href="../public/public/asset/css/reset.css">
-        <link rel="stylesheet" href="../public/public/asset/css/style.css">
+        <link rel="stylesheet" href="../public/asset/css/reset.css">
+        <link rel="stylesheet" href="../public/asset/css/style.css">
         <title>Prévot Matériaux</title>
     </head>
     <body>
