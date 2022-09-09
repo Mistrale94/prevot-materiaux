@@ -6,7 +6,7 @@ include('config/settings.php');
 <html lang="fr">
     <head>
         <?php include('includes/head.php') ?>
-        <title>Prévot Matériaux</title>
+        <title>Prévot Matériaux - Second oeuvre</title>
     </head>
     <body>
         <?php include('includes/header.php') ?>

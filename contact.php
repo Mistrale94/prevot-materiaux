@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <?php include('includes/head.php') ?>
-        <title>Prévot Matériaux</title>
+        <title>Prévot Matériaux - Nous contacter</title>
     </head>
     <body>
         <?php include('includes/header.php') ?>

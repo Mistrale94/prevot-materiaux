@@ -11,7 +11,7 @@ $tConst = $const->fetchAll(PDO::FETCH_ASSOC);
 <html lang="fr">
     <head>
         <?php include('includes/head.php') ?>
-        <title>Prévot Matériaux</title>
+        <title>Prévot Matériaux - A propos</title>
     </head>
     <body>
         <?php include('includes/header.php') ?>

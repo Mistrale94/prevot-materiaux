@@ -45,7 +45,6 @@ if(!isset($_SESSION['user'])){
                 </div>
             </div>
         </section>
-        <?php include('../includes/footer.php') ?>
 
         <script>
             function getImage(imageName){

@@ -54,7 +54,6 @@ $modif = $read->fetch();
                 </div>
             </div>
         </section>
-        <?php include('../includes/footer.php') ?>
 
         <script>
             function getImage(imageName){

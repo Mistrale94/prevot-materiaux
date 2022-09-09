@@ -42,8 +42,6 @@ $tConta = $conta->fetchAll(PDO::FETCH_ASSOC);
                 <?php } ?>
             </div>
         </section>
-
-        <?php include('../includes/footer.php') ?>
         
     </body>
 </html>

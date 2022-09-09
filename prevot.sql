@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : ven. 09 sep. 2022 à 06:47
+-- Généré le : ven. 09 sep. 2022 à 14:21
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `mail` varchar(100) NOT NULL,
   `request` varchar(5000) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `promotion` (
   `description` varchar(500) NOT NULL,
   `date` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `users`
@@ -129,7 +129,8 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'Quentin', 'c8de4a331b4648710b8a2a8502149cd9b2cb28c3b1a01b061d9108fc819751dd6e8965b09d84290b7f02776db8c23b903b933271ade47ae8e894b8d47ac903f6'),
 (2, 'Françoise', '0d3e76f236708b0c6b7556bc7225ccc3594b1cb8cdc7358f24b2df8072f48eab7a7a0d54163d914e7bc7113ae2f17008191c5d21b307c919b0a3db8c6f568d57'),
 (3, 'Valentin', '1951e94c4d143b8f66afdfcc5558627b51fd4a4e3976dde649076ff673b28490e1df0c58d46e11e6669f8ce4f4f493f9f665911a3300a358f80e395b4673fb07'),
-(4, 'Chiara', '2fdcb45168d86ce4344f501e8e3bce4a91e58d119099bfafba1b0a2656ebd046f1d726973fbdd7ea27d4f2c4f5acef7228c2c291958e1cad70fa14d1923b8423');
+(4, 'Chiara', '2fdcb45168d86ce4344f501e8e3bce4a91e58d119099bfafba1b0a2656ebd046f1d726973fbdd7ea27d4f2c4f5acef7228c2c291958e1cad70fa14d1923b8423'),
+(5, 'Thomas', '07b32c6bd85623017e2016535ed40fd93692ebdf0499caf3394e6d2f5b5acf5e55577e1c270381c0ba029981aaf4c017ff1823e7983bf88e8d96b21fb32e8bea');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

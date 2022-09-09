@@ -1174,6 +1174,9 @@ section.products div.products-container ul li{
 /* RESPONSIVE */
 
 @media (max-width: 600px) {
+    header a img{
+        height: 34px;
+    }
     header nav div.desktop-nav{
         display: none;
     }

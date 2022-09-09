@@ -6,12 +6,16 @@ include('config/settings.php');
 <html lang="fr">
     <head>
         <?php include('includes/head.php') ?>
-        <title>Prévot Matériaux</title>
+        <title>Prévot Matériaux - Services</title>
     </head>
     <body>
         <?php include('includes/header.php') ?>
 
         <section id="serv">
+            <h2 class="title">
+                <div class="cercle"></div>
+                Nos services
+            </h2>
             <div class="services">
                 <div class="cardActu">
                     <div class="titleActu">
