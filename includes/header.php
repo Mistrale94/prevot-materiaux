@@ -25,10 +25,10 @@
                     <a href="us.php">A propos</a>
                     <ul class="sous">
                         <li><a href="us.php#nous">Qui sommes-nous</a></li>
-                        <li><a href="us.php#chantier">Nos chantier</a></li>
+                        <li><a href="us.php#chantier">Nos chantiers</a></li>
                         <li><a href="us.php#catalogue">Notre catalogue</a></li>
                         <li><a href="fournisseurs.php">Nos fournisseurs</a></li>
-                        <li><a href="partenaires.php">Nos partenaires</a></li>
+                        <li><a href="us.php#partenaires">Nos partenaires</a></li>
                     </ul>
                 </li>
                 <li class="deroul">

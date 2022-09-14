@@ -24,7 +24,7 @@ include('../config/settings.php');
                     <input type="password" name="password" id="pass" required>
                 </p>
                 <p class="none">
-                    <button type="submit">Connection</button>
+                    <button type="submit">Connexion</button>
                 </p>
             </form>
         </section>

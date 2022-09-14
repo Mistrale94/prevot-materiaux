@@ -30,7 +30,7 @@ $tActu = $actu->fetchAll(PDO::FETCH_ASSOC);
             <div class="text-head">
                 <div class="ligne"></div>
                 <div class="text">
-                    <h1>Négoce de Matériaux de Construction</h1>
+                    <h1>Négoces de Matériaux de Construction</h1>
                     <h2>Prévot Matériaux</h2>
                 </div>
             </div>
@@ -79,6 +79,19 @@ $tActu = $actu->fetchAll(PDO::FETCH_ASSOC);
         </section>
         
         <?php include('includes/footer.php') ?>
+
+        <script>
+            window.axeptioSettings = {
+            clientId: "631b40e80133e9e5bfa6b59c",
+            cookiesVersion: "prevotmateriaux-fr",
+            };
+            
+            (function(d, s) {
+            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+            e.async = true; e.src = "//static.axept.io/sdk.js";
+            t.parentNode.insertBefore(e, t);
+            })(document, "script");
+        </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
