@@ -21,27 +21,6 @@
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.0973816867977!2d2.4054799156770312!3d48.932586979294854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66c79d72973e7%3A0xc431933a464e6a9a!2sPrevot%20Cartier!5e0!3m2!1sfr!2sfr!4v1619593551798!5m2!1sfr!2sfr" loading="lazy"></iframe>
             </div>
-            <div>
-                <img src="public/asset/image/montreuil.JPG" alt="Dépôt Montreuil Matériaux">
-                <div class="text">
-                    <h5><div class="cercle"></div>Montreuil Matériaux</h5>
-                    <a href="https://g.page/montreuilmateriaux?share">188 Boulevard de la Boissière,</br>93100 Montreuil</a>
-                    <span>01.45.28.53.91</span>
-                    <p>Du lundi au vendredi</br>07H00-12H00</br>13H30-17H00</p>
-                    <p>Le samedi 07H30-12H00</p>
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164.0011743105693!2d2.4634610595774373!3d48.87691836375713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e612cbc59ac43b%3A0x20b0edc08c69e6a8!2sMontreuil%20Mat%C3%A9riaux!5e0!3m2!1sfr!2sfr!4v1619594999659!5m2!1sfr!2sfr" loading="lazy"></iframe>
-            </div>
-            <div>
-                <img src="public/asset/image/dock.jpg" alt="Dépôt Dock d'Annet">
-                <div class="text">
-                    <h5><div class="cercle"></div>Docks d'Annet</h5>
-                    <a href="https://goo.gl/maps/bhSFdT8KRk1PqdvD8">21 Route de la Pomponnette,</br>77410 Villevaudé</a>
-                    <span>01.60.94.89.40</span>
-                    <p>Du lundi au vendredi</br>07H00-12H00</br>13H30-17H00</p>
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.683205694697!2d2.662358915854669!3d48.90237430556245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61a69d5ca10a7%3A0xa0f596fabc64037b!2sDocks%20d&#39Annet!5e0!3m2!1sfr!2sfr!4v1619596581704!5m2!1sfr!2sfr" loading="lazy"></iframe>
-            </div>
         </section>
         <section id="media">
             <h2 class="title"><div class="cercle"></div>Nos réseaux sociaux</h2>
@@ -88,12 +67,6 @@
                         <span>Dépôt * :</span>
                         <input type="radio" name="depot" id="pv" value="Prévot Cartier">
                         <label for="pv" required>Prévot Cartier</label>
-
-                        <input type="radio" name="depot" id="mm" value="Montreuil Matériaux">
-                        <label for="mm" required>Montreuil Matériaux</label>
-
-                        <input type="radio" name="depot" id="da" value="Docks D'Annet">
-                        <label for="da" required>Docks D'Annet</label>
                     </p>
                 </div>
                 <div>
